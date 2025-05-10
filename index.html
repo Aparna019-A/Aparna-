@@ -2,67 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>India - Land of Diversity</title>
+  <title>Incredible India</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
-      transition: background-color 1s ease;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: white;
+      background: linear-gradient(-45deg, #1e3c72, #2a5298, #6dd5ed, #2193b0);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      line-height: 1.6;
+      padding-bottom: 60px; /* For footer space */
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     header {
-      background-color: #1a1a1a;
-      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px 0;
       text-align: center;
-      font-size: 2em;
+      font-size: 2.5em;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-shadow: 2px 2px 4px #000;
     }
 
     main {
-      padding: 20px;
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
     }
 
     footer {
-      background-color: #1a1a1a;
-      padding: 10px;
-      text-align: center;
       position: fixed;
-      width: 100%;
       bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 15px 0;
+      font-size: 1em;
     }
   </style>
 </head>
 <body>
 
   <header>
-    Welcome to India
+    Incredible India
   </header>
 
   <main>
     <h2>About India</h2>
     <p>
-      India is a vibrant country located in South Asia, known for its rich cultural heritage,
-      diverse traditions, and a long history that dates back thousands of years. It is the
-      world's largest democracy and the second-most populous country, offering a unique blend
-      of languages, cuisines, landscapes, and religions.
+      India, officially the Republic of India, is a country in South Asia with a rich history that spans thousands of years.
+      It is known for its vibrant culture, diverse population, and remarkable contributions to art, science, philosophy, and politics.
+    </p>
+    <p>
+      As the world's largest democracy and the second-most populous country, India stands as a beacon of multiculturalism.
+      It is a land where ancient traditions and modern advancements coexist harmoniously.
+      From the snow-capped Himalayas in the north to the tropical beaches of Kerala in the south,
+      India's geography is as diverse as its people.
+    </p>
+    <p>
+      The country is a cradle of major world religions like Hinduism, Buddhism, Jainism, and Sikhism,
+      and it celebrates a multitude of colorful festivals that reflect its deep-rooted values and beliefs.
+    </p>
+    <p>
+      India's economy is one of the fastest-growing in the world, with a strong focus on information technology,
+      manufacturing, and space exploration. Cities like Bengaluru, Mumbai, and Delhi are global hubs of innovation and culture.
+    </p>
+    <p>
+      From the ancient architecture of the Taj Mahal to the bustling streets of modern metropolises,
+      India offers an experience that is both timeless and ever-evolving.
     </p>
   </main>
 
   <footer>
-    &copy; 2025 Incredible India
+    &copy; 2025 Incredible India | Designed with ❤️
   </footer>
-
-  <script>
-    const colors = ["#003f5c", "#2f4b7c", "#665191", "#a05195", "#d45087", "#f95d6a", "#ff7c43", "#ffa600"];
-    let index = 0;
-
-    function changeBackground() {
-      document.body.style.backgroundColor = colors[index];
-      index = (index + 1) % colors.length;
-    }
-
-    setInterval(changeBackground, 3000); // Change every 3 seconds
-  </script>
 
 </body>
 </html>
