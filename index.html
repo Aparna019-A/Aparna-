@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>India - Land of Diversity</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      transition: background-color 1s ease;
+      color: white;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Welcome to India
+  </header>
+
+  <main>
+    <h2>About India</h2>
+    <p>
+      India is a vibrant country located in South Asia, known for its rich cultural heritage,
+      diverse traditions, and a long history that dates back thousands of years. It is the
+      world's largest democracy and the second-most populous country, offering a unique blend
+      of languages, cuisines, landscapes, and religions.
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2025 Incredible India
+  </footer>
+
+  <script>
+    const colors = ["#003f5c", "#2f4b7c", "#665191", "#a05195", "#d45087", "#f95d6a", "#ff7c43", "#ffa600"];
+    let index = 0;
+
+    function changeBackground() {
+      document.body.style.backgroundColor = colors[index];
+      index = (index + 1) % colors.length;
+    }
+
+    setInterval(changeBackground, 3000); // Change every 3 seconds
+  </script>
+
+</body>
+</html>
